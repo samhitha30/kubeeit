@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ZONE=${KUBE_AWS_ZONE:-us-east-2a}
+ZONE=${KUBE_AWS_ZONE:-us-northeast-2a}
 MASTER_SIZE=${MASTER_SIZE:-}
 NODE_SIZE=${NODE_SIZE:-}
 NUM_NODES=${NUM_NODES:-2}
@@ -55,7 +55,7 @@ fi
 #  AWS_S3_BUCKET=kubernetes-artifacts
 
 # Because regions are globally named, we want to create in a single region; default to us-east-1
-AWS_S3_REGION=${AWS_S3_REGION:-us-east-2}
+AWS_S3_REGION=${AWS_S3_REGION:-us-northeast-2}
 
 # Which docker storage mechanism to use.
 DOCKER_STORAGE=${DOCKER_STORAGE:-aufs}
